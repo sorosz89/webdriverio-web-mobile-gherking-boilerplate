@@ -19,14 +19,14 @@ const iOSWebCap = {
   browserName: 'safari',
   'appium:platformName': 'iOS',
   'appium:deviceName': 'iPhone 11 Pro',
-  'appium:platformVersion': '15.2',
+  'appium:platformVersion': '17.5',
   'appium:automationName': 'XCUITest',
   acceptInsecureCerts: true,
   timeouts: { implicit: 60000, pageLoad: 60000, script: 60000 }
 };
 
 export const dynamicConfig: Options.Testrunner = {
-  capabilities: [androidWebCap],
+  capabilities: [iOSWebCap],
   services: [
     [
       'appium',
@@ -42,5 +42,6 @@ export const dynamicConfig: Options.Testrunner = {
     ],
     'shared-store'
   ],
+  port: 4723,
   path: '/wd/hub'
 };

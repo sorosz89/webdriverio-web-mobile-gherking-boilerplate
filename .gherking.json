@@ -1,0 +1,21 @@
+{
+    "compilers": [
+        {
+            "path": "gpc-filter",
+            "configuration": "not @wip"
+        },
+        {
+            "path": "gpc-scenario-numbering"
+        }
+    ],
+    "source": "tests/feature-source/demo-login.feature",
+    "base": "tests/feature-source",
+    "destination": "tests/features",
+    "parseConfig": {
+        "tagFormat": "functional"
+    },
+    "formatOptions": {
+        "compact": true,
+        "tagFormat": "assignment"
+    }
+}
